@@ -28,9 +28,21 @@ def bens_fun(x):
         count+=1
     return y
 print(bens_fun(115))
-            
+
+def prime_check(x):        
+    for ii in range(2,x):
+        if x%ii==0:
+            return False
+    return True
+print(prime_check(10))
+count=0
+for ii in range(1000):
+    if prime_check(ii)==True:
+        count+=1
+print(count)    
+                        
         
-        
+       
             
             
 
